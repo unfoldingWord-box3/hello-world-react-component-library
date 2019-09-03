@@ -1,10 +1,4 @@
-Simple example:
-
-```js
-<HelloNamesList names={["World", "🍕"]} />
-```
-
-Complex example:
+### Simple example
 
 ```js
 <HelloNamesList names={["World", "🍕"]} />

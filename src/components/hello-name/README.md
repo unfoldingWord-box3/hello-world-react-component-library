@@ -1,11 +1,20 @@
-Simple example:
+### Simple example
 
 ```js
 <HelloName name="World" />
 ```
 
-Complex example:
+### Complex example
 
 ```js
-<HelloName name="🍕" />
+const style = {
+  color: '#014263',
+  display: 'inline',
+  textDecoration: 'underline',
+};
+
+<>
+  <HelloName name="World" style={style} />, 
+  <HelloName name="🍕" style={style} />!
+</>
 ```

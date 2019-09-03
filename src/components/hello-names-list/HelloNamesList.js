@@ -9,14 +9,13 @@ import {
 function HelloNamesList({
   classes,
   names,
-  style,
 }) {
   const helloNameComponents = names.map(name =>
     <ListItem>Hello {name}</ListItem>
   );
 
   return (
-    <List className={classes.root} style={style}>
+    <List className={classes.root}>
       {helloNameComponents}
     </List>
   );
@@ -27,8 +26,6 @@ HelloNamesList.propTypes = {
   classes: PropTypes.object.isRequired,
   /** The names of the people to say hello to. */
   names: PropTypes.arrayOf(PropTypes.string).isRequired,
-  /** The overriding CSS for this component */
-  style: PropTypes.object,
 };
 
 const styles = theme => ({

@@ -4,13 +4,14 @@ const camelCase = require('lodash/camelCase');
 const { name, version, repository } = require('./package.json');
 const { styles, theme } = require('./styleguide.styles');
 
+let sections = [];
 const sectionNames = [
   'hello-name',
-  'hello-name-list-item',
   'hello-names',
+  'hello-name-list-item',
   'hello-names-list',
 ];
-const sections = sectionNames.map(value => {
+sectionNames.forEach(value => {
   const filename = upperFirst(camelCase(value));
   const section = {
     name: filename,
@@ -18,8 +19,14 @@ const sections = sectionNames.map(value => {
       Path.resolve(__dirname, `src/components/${value}`, `${filename}.js`),
     ]),
   };
-  return section;
+  sections.push(section);
 });
+
+const muiThemes = {
+  name: 'MUI Themes',
+  content: 'src/MuiThemes.md',
+};
+sections.push(muiThemes);
 
 module.exports = {
   title: `${upperFirst(camelCase(name))} v${version}`,
