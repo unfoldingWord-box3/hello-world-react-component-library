@@ -6,12 +6,16 @@ import {
   ListItem,
 } from '@material-ui/core';
 
+import { HelloName } from '..';
+
 function HelloNamesList({
   classes,
   names,
 }) {
   const helloNameComponents = names.map(name =>
-    <ListItem>Hello {name}</ListItem>
+    <ListItem>
+      <HelloName name={name} />
+    </ListItem>
   );
 
   return (

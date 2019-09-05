@@ -4,29 +4,32 @@ const camelCase = require('lodash/camelCase');
 const { name, version, repository } = require('./package.json');
 const { styles, theme } = require('./styleguide.styles');
 
-let sections = [];
-const sectionNames = [
-  'hello-name',
-  'hello-names',
-  'hello-name-list-item',
-  'hello-names-list',
-];
-sectionNames.forEach(value => {
-  const filename = upperFirst(camelCase(value));
-  const section = {
-    name: filename,
-    components: () => ([
-      Path.resolve(__dirname, `src/components/${value}`, `${filename}.js`),
-    ]),
-  };
-  sections.push(section);
-});
 
-const muiThemes = {
-  name: 'MUI Themes',
-  content: 'src/MuiThemes.md',
-};
-sections.push(muiThemes);
+
+let sections = [
+  {
+    name: 'README',
+    content: 'README.md',
+  },
+  {
+    name: 'Greetings',
+    components: () => {
+      const componentNames = [
+        'hello-name',
+        'hello-names-ul',
+        'hello-names-list',
+      ];
+      return componentNames.map(componentName => {
+        const filename = upperFirst(camelCase(componentName));
+        return Path.resolve(__dirname, `src/components/${componentName}`, `${filename}.js`)
+      });
+    }
+  },
+  {
+    name: 'MUI Themes',
+    content: 'src/MuiThemes.md',
+  }
+];
 
 module.exports = {
   title: `${upperFirst(camelCase(name))} v${version}`,

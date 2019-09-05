@@ -1,3 +1,6 @@
+
+This is an atomic component that greets a single name.
+
 ### Simple example
 
 ```js

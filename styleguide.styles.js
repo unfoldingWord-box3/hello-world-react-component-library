@@ -39,7 +39,7 @@ const theme = {
     ribbonBackground: colors.primary,
   },
   fontFamily: {
-    base: '"proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+    base: '"q_serif",Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif',
     monospace: 'Consolas, "Liberation Mono", Menlo, monospace'
   },
   fontSize: {
@@ -194,6 +194,13 @@ const styles = {
         marginBottom: `${rhythm(0.125)} !important`
       }
     }
+  },
+  Code: {
+    code: {
+      backgroundColor: colors.paleGrey,
+      padding: '2px',
+      fontSize: '0.9em',
+    },
   }
 }
 

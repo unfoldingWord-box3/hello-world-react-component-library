@@ -1,0 +1,48 @@
+![Lego Blocks](https://forum.door43.org/uploads/default/original/1X/0a2172623a094033c0f609fe36bb08eacdd4fb1b.jpeg)
+
+# Example React Component Library
+
+### The Stack
+
+- Javascript + React (functional components & hooks).
+- MaterialUI for UI/UX baseline design components.
+- Styleguidist for Playground Documentation.
+- Yarn for dependencies, publishing, and deploying.
+- Github + NPM + Github Pages for Hosting.
+
+There are many alternatives to each layer referenced here. However, many of the alternatives add a great deal of complexity to the initial setup and long term maintenance which prevents it from being practical.
+
+# How to deploy your own?
+
+Once you have this codebase forked and cloned to your local machine, you can start modifying the codebase.
+You will need to ensure `node.js` and `yarn` are already installed.
+
+### Installation and Running the Styleguide Locally
+
+1. Install the npm dependencies with `yarn`.
+1. Run the Styleguide with `yarn start`.
+1. Ensure that the Styleguide is running by visiting `localhost:6060` on your web browser.
+1. Modify the code and documentation in your code editor and check out the Styleguide.
+
+### Setting up NPM Publishing
+
+1. Rename your library:
+    - the folder
+    - repo on Github
+1. Update the `package.json`:
+    - change the `name` and `description` of your app
+    - change the URLs of your `homepage` and `repository`
+1. Create an account on `npmjs.org` if you don't have one already.
+
+### Publishing to NPM
+
+The scripts in the `package.json` file do all of the heavy lifting.
+
+1. Commit and push all changes to your github repo.
+1. Run `yarn publish`:
+    - login to NPM using your credentials if asked.
+    - enter the new version number using symver.
+    - wait for the code to be transpiled and published to NPM.
+    - wait for the styleguide to be built and deployed to GHPages.
+1. Visit your published library on NPM.
+1. Visit your deployed Styleguide on GHPages.
