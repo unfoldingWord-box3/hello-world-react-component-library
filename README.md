@@ -2,6 +2,9 @@
 
 # Example React Component Library
 
+Read more about why we are focusing on creating component libraries and our approach:
+https://forum.door43.org/t/component-libraries/396
+
 ### The Stack
 
 - Javascript + React (functional components & hooks).
@@ -46,3 +49,8 @@ The scripts in the `package.json` file do all of the heavy lifting.
     - wait for the styleguide to be built and deployed to GHPages.
 1. Visit your published library on NPM.
 1. Visit your deployed Styleguide on GHPages.
+
+# Other Resources
+
+Here's a great writeup that walks you through a slightly different stack:
+https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210

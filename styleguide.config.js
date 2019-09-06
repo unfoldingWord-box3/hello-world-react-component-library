@@ -26,6 +26,10 @@ let sections = [
     }
   },
   {
+    name: 'Core',
+    content: 'src/core/README.md',
+  },
+  {
     name: 'MUI Themes',
     content: 'src/MuiThemes.md',
   }
