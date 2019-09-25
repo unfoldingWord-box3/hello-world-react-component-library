@@ -26,6 +26,7 @@ You will need to ensure `node.js` and `yarn` are already installed.
 1. Run the Styleguide with `yarn start`.
 1. Ensure that the Styleguide is running by visiting `localhost:6060` on your web browser.
 1. Modify the code and documentation in your code editor and check out the Styleguide.
+    - Update the styleguide.config.js to match your new component names.
 
 ### Setting up NPM Publishing
 
@@ -49,6 +50,14 @@ The scripts in the `package.json` file do all of the heavy lifting.
     - wait for the styleguide to be built and deployed to GHPages.
 1. Visit your published library on NPM.
 1. Visit your deployed Styleguide on GHPages.
+
+### Deploying Styleguide to GHPages
+
+You can optionally deploy the styleguide to GHPages without publishing to NPM.
+
+1. Run `yarn deploy`
+1. There is a `predeploy` hook that builds the Styleguide.
+1. That's it!
 
 # Other Resources
 
