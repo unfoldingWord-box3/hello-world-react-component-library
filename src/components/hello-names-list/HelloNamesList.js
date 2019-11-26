@@ -6,7 +6,7 @@ import {
   ListItem,
 } from '@material-ui/core';
 
-import { HelloName } from '..';
+import { HelloName } from '../../components';
 
 function HelloNamesList({
   classes,
