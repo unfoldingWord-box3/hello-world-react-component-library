@@ -1,15 +1,15 @@
 {
-  "name": "cypress-coverage-styleguidist",
-  "description": "React styleguidist basic example w/ cypress coverage",
-  "version": "1.0.0",
-  "private": true,
-  "homepage": "https://github.com/RoyalSix/cypress-coverage-styleguidist",
+  "name": "hello-world-react-component-library",
+  "description": "A Collection of Components for Telling the World Hello.",
+  "version": "0.0.6",
+  "private": false,
+  "homepage": "https://unfoldingword-box3.github.io/hello-world-react-component-library/",
   "author": {
     "name": "Jay Scott"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/RoyalSix/cypress-coverage-styleguidist.git"
+    "url": "https://github.com/unfoldingWord-box3/hello-world-react-component-library"
   },
   "license": "MIT",
   "engines": {
