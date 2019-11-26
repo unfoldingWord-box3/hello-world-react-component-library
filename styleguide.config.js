@@ -6,7 +6,7 @@ const { styles, theme } = require('./styleguide.styles');
 
 
 
-let sections = [
+const sections = [
   {
     name: 'README',
     content: 'README.md',
@@ -21,7 +21,7 @@ let sections = [
       ];
       return componentNames.map(componentName => {
         const filename = upperFirst(camelCase(componentName));
-        return Path.resolve(__dirname, `src/components/${componentName}`, `${filename}.js`)
+        return Path.resolve(__dirname, `src/components/${componentName}`, `${filename}.js`);
       });
     }
   },
@@ -42,7 +42,6 @@ module.exports = {
     text: 'View on GitHub'
   },
   webpackConfig: require('react-scripts/config/webpack.config')('development'),
-  // serverPort: 3000,
   styles,
   theme,
   getComponentPathLine: (componentPath) => {
