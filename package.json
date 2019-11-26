@@ -25,8 +25,9 @@
     "styleguide:build": "styleguidist build",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "nyc:report": "nyc report",
-    "test": "start-test 6060 cypress:run && npm run nyc:report"
+    "nyc:report": "nyc report --reporter=json-summary --reporter=text",
+    "test": "start-test 6060 cypress:run && npm run nyc:report",
+    "create-coverage-badge": "bash scripts/create-badge-json.sh"
   },
   "dependencies": {
     "@material-ui/core": "^4.7.0",
