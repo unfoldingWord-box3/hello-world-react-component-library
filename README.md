@@ -1,3 +1,4 @@
+[![Custom badge](https://img.shields.io/endpoint?color=%2374b9ff&url=https%3A%2F%2Fraw.githubusercontent.com%2unfoldingWord-box3%2Fhello-world-react-component-library%2Fmaster%2Fcoverage%2Fshields.json)]()
 ![Lego Blocks](https://forum.door43.org/uploads/default/original/1X/0a2172623a094033c0f609fe36bb08eacdd4fb1b.jpeg)
 
 # Example React Component Library
