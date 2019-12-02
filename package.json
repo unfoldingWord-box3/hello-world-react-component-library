@@ -4,9 +4,6 @@
   "version": "0.0.6",
   "private": false,
   "homepage": "https://unfoldingword-box3.github.io/hello-world-react-component-library/",
-  "author": {
-    "name": "Jay Scott"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/unfoldingWord-box3/hello-world-react-component-library"
