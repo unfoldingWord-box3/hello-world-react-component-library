@@ -13,7 +13,6 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "react-scripts build",
     "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline",
     "predeploy": "yarn styleguide:build",
     "deploy": "gh-pages -d styleguide",
@@ -30,29 +29,32 @@
     "@material-ui/core": "^4.7.0",
     "cypress": "^3.6.1",
     "dog-names": "^2.0.0",
-    "lodash": "^4.17.15",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-styleguidist": "^9.1.14"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "@cypress/code-coverage": "^1.10.2",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-istanbul": "^5.2.0",
+    "babel-loader": "8.1.0",
     "cross-env": "^6.0.3",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "istanbul-lib-coverage": "^2.0.5",
+    "lodash": "^4.17.15",
     "nyc": "^14.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-styleguidist": "^11.1.7",
     "start-server-and-test": "^1.10.6",
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0",
-    "webpack": "^4.39.1"
+    "webpack": "4.44.2"
   },
   "browserslist": [
     ">0.2%",
