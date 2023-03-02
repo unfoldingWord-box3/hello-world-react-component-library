@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.7.0",
-    "cypress": "^3.6.1",
+    "cypress": "^12.7.0",
     "dog-names": "^2.0.0",
     "prop-types": "^15.7.2"
   },
